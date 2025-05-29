@@ -10,7 +10,7 @@ import {
 import { useNavigate } from 'react-router-dom';
 import api from '../api/axios';
 import styles from './SearchPage.module.css';
-import Grid from '@mui/material/Grid';
+import {Grid} from '@mui/material';
 import { motion } from 'framer-motion';
 
 interface Dog {
@@ -125,7 +125,7 @@ export default function SearchPage() {
 
       <Grid container spacing={3} justifyContent="center">
         {dogs.map((dog, index) => (
-          <Grid item xs={12} sm={6} md={4} key={dog.id}>
+          <Grid item xs={12} sm={6} md={4} key={dog.id} {...({} as any)}>
             <motion.div
               className={styles.card}
               initial={{ opacity: 0, y: 20 }}

@@ -5,7 +5,7 @@ import { TextField, Typography, Button, Paper } from '@mui/material';
 import { Player } from '@lottiefiles/react-lottie-player';
 import styles from './LoginPage.module.css';
 import animationData from '../assets/bg-animation.json'; // your downloaded Lottie file
-import dogWalkAnimation from '../assets/dog1.json'; // adjust the path as needed
+
 
 
 export default function LoginPage() {
